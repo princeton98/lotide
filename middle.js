@@ -24,7 +24,7 @@ const assertArraysEqual = function(actual, expected) {
 const middle = function(array) {
   let midArray = [];
   // array < 2, return empty array
-  if (array.length < 2) {
+  if (array.length <= 2) {
     return midArray;
   }
   // odd number of elements, one elemnt returned
@@ -39,6 +39,7 @@ const middle = function(array) {
     return midArray;
   }
 };
+console.log(middle([1]));
 console.log(middle([1, 2, 3, 4, 5]));
 console.log(middle([1, 2, 3]));
 console.log(middle([1, 3, 4, 5, 2, 1, 3, 6, 3]));
