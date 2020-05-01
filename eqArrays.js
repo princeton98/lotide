@@ -7,7 +7,7 @@ const assertEqual = function (actual, expected) {
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   let counter = 0;
   if (array1.length === array2.length) {
     for (let i = 0; i < array1.length; i++) {
@@ -17,7 +17,7 @@ const eqArrays = function (array1, array2) {
     }
   }
   if (counter === array1.length) {
-    return true
+    return true;
   } else return false;
 };
 
