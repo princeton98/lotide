@@ -1,9 +1,15 @@
 const middle = require("../middle");
-const assertArraysEqual = require("../assertArraysEqual");
+// const assertArraysEqual = require("../assertArraysEqual");
+const assert = require("chai").assert
 
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 3, 4, 5, 2, 1, 3, 6, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), middle([6, 7, 8, 9, 10, 11]));
-assertArraysEqual(middle([1, 2, 2, 3, 5, 6]), middle([6, 7, 2, 3, 10, 11]));
+describe("#middle", () => {
+  it("should return an empty array when length of array is less than or equal to 2", () =>{
+    assert.deepEqual(middle([1, 2]), []);
+  });
+  it("should return '[2]' when given an array of '[1, 2, 3]'", () => {
+    assert.deepEqual(middle([1, 2, 3]), [2]);
+  });
+  it("should return '[2, 3]' when given an array of '[1, 2, 3, 4]'", () => {
+    assert.deepEqual(middle([1, 2, 3, 4]), [2, 3]);
+  })
+})
