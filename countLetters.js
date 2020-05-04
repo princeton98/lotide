@@ -23,3 +23,5 @@ const countLetters = function(word) {
 console.log(countLetters("rewarding is easy"));
 console.log(countLetters(" how is the weather outside"));
 console.log(countLetters("lighthouse in the house"));
+
+module.exports = countLetters

@@ -26,3 +26,4 @@ const bestTVShowsByGenre = {
 };
 
  assertEqual((findKeyByValue(bestTVShowsByGenre, "The Wire")), 'drama');
+ module.exports = findKeyByValue;

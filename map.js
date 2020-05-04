@@ -35,3 +35,4 @@ console.log(results1);
 
 //testing 
 assertArraysEqual(map(["happy", "lucky", "jumpy", "caddy", "laddy"], word => word[2]), ['p', 'c', 'm', 'd', 'd']);
+module.exports = map;
