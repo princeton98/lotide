@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@princeton98/lotide",
+  "version": "1.0.1",
+  "description": "A library of functions, focused on arrays and objects.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/princeton98/lotide.git"
   },
-  "author": "",
+  "author": "Princeton Arulnesan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/princeton98/lotide/issues"
